@@ -1,5 +1,5 @@
 # Glioblastoma Spatial Transcriptomics
-Practicing using Seurat on a [glioblastoma dataset](https://www.10xgenomics.com/datasets/gene-and-protein-expression-library-of-human-glioblastoma-cytassist-ffpe-2-standard). 
+Practicing using Seurat on a [glioblastoma dataset](https://www.10xgenomics.com/datasets/gene-and-protein-expression-library-of-human-glioblastoma-cytassist-ffpe-2-standard) to look at spatial changes in gene expression. 
 
 ## Steps
 1. `Quality control`; removing spots with low gene detection and a high percentage of mitochondrial reads
