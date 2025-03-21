@@ -72,7 +72,7 @@ SpatialFeaturePlot(seuratObj, features = "mito_percent") + theme(legend.position
 seuratObj <- seuratObj[!grepl("^MT-", rownames(seuratObj)), ]
 
 # NORMALISATION ################################################################
-#seuratObj <- SCTransform(seuratObj, assay = "Spatial", verbose = TRUE)
+seuratObj <- SCTransform(seuratObj, assay = "Spatial", verbose = TRUE)
 
 # PCA/UMAP #####################################################################
 # These are now standard steps in the Seurat workflow for visualization and clustering
@@ -106,7 +106,7 @@ SpatialDimPlot(seuratObj, label = FALSE, label.size = 3)+
   guides(fill='none')
 
 # differential expression between cluster 7 and cluster 3
-#de_markers <- FindMarkers(seuratObj, ident.1 = 7, ident.2 = 3)
+de_markers <- FindMarkers(seuratObj, ident.1 = 7, ident.2 = 3)
 
 # plot top marker
 SpatialFeaturePlot(object = seuratObj, features = rownames(de_markers)[1:1],
