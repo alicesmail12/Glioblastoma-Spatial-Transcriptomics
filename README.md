@@ -4,7 +4,7 @@ Practicing using Seurat on a [glioblastoma dataset](https://www.10xgenomics.com/
 ## Steps
 1. `Quality control`; removing spots with low gene detection and a high percentage of mitochondrial reads
 2. `Normalisation` using SCTransform
-3. `UMAP` visualisation clustering
+3. `UMAP` visualisation and clustering
 4. `DE analysis` between different clusters
 
 ## Output files
