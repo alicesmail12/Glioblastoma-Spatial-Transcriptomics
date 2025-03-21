@@ -6,3 +6,6 @@ Practicing using Seurat on a glioblastoma dataset from https://www.10xgenomics.c
 2. `Normalisation` using SCTransform
 3. `UMAP` visualisation clustering
 4. `DE analysis` between different clusters
+
+## Output files
+Output file contains UMAP and spatial representations of spot clusters, as well as a spatial expression plot of one DE gene (CPLX2; Complexin 2) between clusters 3 & 7.
